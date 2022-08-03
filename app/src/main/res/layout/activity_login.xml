@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".activities.LoginActivity" >
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:hint="Email Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtPassword"
+        android:layout_alignLeft="@+id/txtPassword"
+        android:layout_alignRight="@+id/txtPassword"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPassword"
+        android:layout_alignRight="@+id/imgBarcode"
+        android:layout_below="@+id/txtPassword"
+        android:layout_marginTop="16dp"
+        android:text="Login" />
+
+    <ImageButton
+        android:id="@+id/btnScanQRCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnLogin"
+        android:layout_alignRight="@+id/txtPassword"
+        android:layout_alignTop="@+id/btnLogin"
+        android:layout_toRightOf="@+id/btnLogin"
+        android:scaleType="fitCenter"
+        android:src="@drawable/qrcode" />
+
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginTop="16dp"
+        android:text="Create Account" />
+
+
+    <Button
+        android:id="@+id/btnforget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnregister"
+        android:layout_marginTop="16dp"
+        android:text="Forget Password?" />
+    android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgBarcode"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:src="@mipmap/ic_launcher" />
+
+</RelativeLayout>

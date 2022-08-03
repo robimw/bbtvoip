@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".activities.SignupActivity" >
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:hint="Full Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtEmail"
+        android:layout_alignLeft="@+id/txtEmail"
+        android:layout_alignRight="@+id/txtEmail"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:hint="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:layout_alignLeft="@+id/txtEmail"
+        android:layout_alignRight="@+id/txtEmail"
+        android:ems="10"
+        android:inputType="textPassword" >
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/txtpass1"
+        android:hint="Confirm Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPass"
+        android:layout_alignLeft="@+id/txtEmail"
+        android:layout_alignRight="@+id/txtEmail"
+        android:ems="10"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtpass1"
+        android:layout_marginTop="16dp"
+        android:text="Signup Now" />
+
+
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsignup"
+        android:layout_marginTop="16dp"
+        android:text="Already registered" />
+
+
+
+    <ImageView
+        android:id="@+id/imgBarcode"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:src="@mipmap/ic_launcher" />
+
+</RelativeLayout>
