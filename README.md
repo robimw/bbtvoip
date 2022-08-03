@@ -1,3 +1,7 @@
+<img src="https://user-images.githubusercontent.com/23482883/182576609-ccde8f41-f5a8-4052-89ce-3b22d0327588.png" width="250" height="auto"> <img src="https://user-images.githubusercontent.com/23482883/182576805-6fdd43d4-f7f5-4d74-90eb-2cc80a918bf1.png" width="250" height="auto">
+<img src="https://user-images.githubusercontent.com/23482883/182576930-fe458164-67cb-47cb-bf51-221b7c8a82fd.png" width="250" height="auto"> <img src="https://user-images.githubusercontent.com/23482883/182577011-34779ae3-095a-4db5-9afc-afe589317597.png" width="250" height="auto">
+<img src="https://user-images.githubusercontent.com/23482883/182577884-49f6664a-1046-47e4-a753-e15b700e4917.png" width="250" height="auto">
+
 
 [![pipeline status](https://gitlab.linphone.org/BC/public/linphone-android/badges/master/pipeline.svg)](https://gitlab.linphone.org/BC/public/linphone-android/commits/master)
 
